@@ -7,10 +7,11 @@
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/e6c7602d82.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
 </head>
 <body>
-    <div id="header">
-             <nav>
+    
+            <nav>
                 <ul id="sidemenu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -20,6 +21,8 @@
                 </ul>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
+
+    <div class="h-container">
             <div class="header-text">
                 <p>Hi there,</p>
                 <h1>I'm <span>Affan Wasi</span><br>Full Stack Web Developer From India</h1>
@@ -46,7 +49,7 @@
 
 
 <div id="about"> 
-    <div class="container">
+    <div class="a-container">
         <div class="row">
 
             <div class="about-col-1">
@@ -99,12 +102,32 @@
     </div>
  </div>
 
+ <!-- -------------------------------------Certificate------------------------------ -->
+
+<div id="Certificate">
+    <div class="ce-container">
+        <div class="event">
+           <h1>Certificate</h1>
+           <div class="swiper">
+               
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide"><a href="Images/Web development.png"><img src="images/Web development.png"></a></div>
+                 <div class="swiper-slide"><a href="Images/3Days Workshop.png"><img src="Images/3Days Workshop.png" ></a></div>
+               </div>
+           
+               <div class="swiper-pagination"></div>
+               <div class="swiper-button-prev"></div>
+               <div class="swiper-button-next"></div>
+           </div>
+        </div>   
+    </div>
+</div>
 
  <!-- -------------------------------------PORTFOLIO------------------------------ -->
 
 
  <div id="portfolio">
-    <div class="container">
+    <div class="p-container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
 
@@ -133,20 +156,18 @@
             </div>
         </div>
 
-        <a href="#" class="btn">See More</a>
+        <!--<a href="#" class="btn">See More</a> -->
     </div>
  </div>
-
-
- <!-- -------------------------------CERTIFICATE-------------------------------- -->
  
  
  <!-- --------------------------------CONTACT--------------------------------------    -->
 
 
  <div id="contact">
-    <div class="container">
-        <h1 class="sub-title">Contact Me</h1>
+    <div class="c-container">
+        <div class="contact-form">
+            <h1>Contact Me</h1>
                 <form action="https://formspree.io/f/moqzeykr"
                 method="POST">
                    <div>
@@ -192,7 +213,8 @@
                     </div>
                 </form>
             </div> 
-    <div class="copyright"><p>copyright <i class="fa-solid fa-copyright"></i> made by Affan Wasi</p></div>
+        </div>    
+    <div class="copyright"><p><i class="fa-solid fa-copyright"></i>Copyright 2023 | Made By Affan Wasi</p></div>
  </div>
 
 
@@ -230,8 +252,30 @@ function opentab(tabname){
     sidemenu.style.right = "-100px";
  }
 
-
  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+        autoplay:{
+            delay:3000,
+            disableOnInteraction: false,
+        },
+  loop:true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable:true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+});
+</script>
 
 </body>
 </html>

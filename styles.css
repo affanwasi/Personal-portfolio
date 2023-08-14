@@ -12,9 +12,16 @@ html{
     
 
 body{
-    background:rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    background:rgb(2, 14, 17);
+    color: rgb(250, 250, 251);
 }
+
+nav{
+    width: 100%;
+    height: 50px;
+    line-height: 30px;
+    background-color: rgb(16, 94, 94);
+}   
     
     
 nav ul li{
@@ -22,17 +29,7 @@ nav ul li{
     list-style:none;
     margin:10px 20px;
 }
-
-
-#header{
-    height: 100%;
-    width:100%;
-    background-position: center;
-    background-size: cover;
-    position:relative;
-}
-
-    
+  
 nav ul li a{
     color:white;
     text-decoration: none;
@@ -69,7 +66,6 @@ p span{
     border-radius: 2px;
     padding-top:15px 15px;
     margin:10px 20px;
-    
 }
 
     
@@ -77,7 +73,6 @@ p span{
     margin-top:15%; 
     font-size: 20px;
     padding-left: 10%;
-    width:80%;
 }
 
 
@@ -92,13 +87,8 @@ p span{
 
 
 .social-icons ul li a i{
-    
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 5px;
-    margin-right: 10px;
-
-    color: beige; 
+    margin: 30px 10px 1px 8px;
+    color: aliceblue; 
 }
   
 
@@ -119,33 +109,25 @@ p span{
 } 
 
 
-.container{
-    padding-left:10%;
-    padding-right: 10%;
-    height: 100%;
-    width:100%;
+.h-container{
+    height: 60vh;
+    width:96vw;
+    margin: 0 2vw;
 }
 
     
-nav{
-    width: 100%;
-    height: 50px;
-    line-height: 30px;
-    background-color: rgb(16, 94, 94);
-    margin: 0;
-    
-}   
+
 
 
 
 /* --------------------------------------ABOUT------------------------------------ */
 
-
-
-#about{
-    margin-top: 22%;
-    margin-bottom: 10%;
+.a-container{
+    height: 70vh;
+    width:96vw;
+    margin: 10vh 2vw;
 }
+
 
 
 .row{
@@ -160,19 +142,21 @@ nav{
     display: inline-block;
 }
 
-.about-col-1 a{padding:14px 90px;
-margin-right: 15%;}
+.about-col-1 a{
+    align-items: center;
+}
 
 
 .about-col-1 img{
-    width:90%;
-    border-radius: 20px;
+    width:60%;
+    margin-left: 20%;
     border:1px solid aqua;
+    box-shadow: 3px 3px 8px 1px aqua;
 }
 
 
 .about-col-2{
-    flex-basis: 60%;
+    flex-basis: 65%;
 }
 
 
@@ -184,9 +168,10 @@ margin-right: 15%;}
 .sub-title{
     font-size: 30px;
     font-weight: 200;
-    color:rgb(11, 230, 182);
+    color:aliceblue;
     text-align: center;
     font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
@@ -220,7 +205,7 @@ p{
 
 
 .tab-links.active-link::after{
-        width:50%;
+    width:50%;
 }
 
 
@@ -253,33 +238,26 @@ p{
 /* ------------------------------PORTFOLIO---------------------------- */
 
 
-#portflio{
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-
-.work-list{
-    display:grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-    gap: 40px;
-    margin-top: 50px;
+.p-container{
+    width: 96vw;
+    height:70vh;
+    margin:10vh 2vw;
 }
 
 
 .work{
-    border-radius: 10px;
+    width:27%;
     position: relative;
     overflow: hidden;
-    border-color: aqua;
-    border:10px;
+    float:left;
+    margin-left: 5%;
+    margin-top: 2%;
 }
 
 
 .work img{
     width:100%;
     border-radius: 10px;
-    display:block;
     transition: trasform 0.5s;
     border:2px solid aqua;
 }
@@ -365,29 +343,68 @@ p{
 /* -----------------------------------CERTIFICATE--------------------------------  */
 
 
-/* -----------------------------------CONTACT------------------------------------ */
+.ce-container{
+    width:96vw;
+    height:75vh;
+    margin:10vh 2vw;
+    text-align: center;
+}
 
-
-#contact{
-    margin-top: 10%;
+.ce-container h1{
+    padding:10px 0;
 }
 
 
-.contact-right form{
-    width:100%;
+.swiper{
+    width:40%;
+    height:fit-content;
+    box-shadow: 3px 3px 18px 1px aqua;
+ }
+
+ .swiper-slide img{
+    width: 100%;
+ }
+
+ .swiper .swiper-button-prev, .swiper .swiper-button-next{
+    color:aqua;
+    font-weight: bolder;
+ }
+ 
+ .swiper .swiper-pagination-bullet-active{
+    background:aqua;
+ }
+
+/* -----------------------------------CONTACT------------------------------------ */
+
+
+.c-container{
+    width: 96vw;
+    height:70vh;
+    margin:10vh 2vw;
+
+}
+
+.contact-form{
+    width:40vw;
+    text-align: center;
+    margin-left: 28%;
+    background-color: rgb(35, 42, 45);
+    box-shadow: 5px 5px 10px 3px aqua;
+    padding-bottom: 5px;
+}
+.contact-form h1{
+    padding-top: 10px;
 }
 
 
 form input, form textarea{
     width: 100%;
-    border: 0;
     outline: none;
     background:rgb(255, 255,255);
     padding: 15px;
-    margin: 15px 0;
+    margin: 10px 0;
     color:rgb(0, 0, 0);
     font-size: 18px;
-    border-radius: 6px;
 }
 
 
@@ -395,18 +412,17 @@ form input, form textarea{
 form{
     align-items: center;
     justify-content: center;
-    width:60%;
-    margin:5% 20%;
+    width:80%;
+    margin: 5% 5% 0 10%;
 }
 
 
 form .btn2{
-    padding:14px 60px;
     font-size:20px;
     color:white;
     background:rgb(0, 0, 0);
-    margin-top: 20px;
     cursor: pointer;
+    
 }
 
 
@@ -437,7 +453,7 @@ font-size: 14px;}
 font-size:18px;
 }
 p{
-font-size: 10px;
+font-size: 20px;
 }
 
 
@@ -452,8 +468,8 @@ nav  ul{
     background: rgb(4, 56, 56);
     position:fixed;
     top:0;
-    right:-100px;
-    width: 100px;
+    right:-100vw;
+    width: 100vw;
     height: 100vh;
     padding-top:40px;
     transition: 0.5s;
@@ -471,12 +487,46 @@ nav ul .fa-solid{
     right:25px;
 }
 
-.about-col-1, .about-col-2{
-        flex-basis: 100%;
-        position: center;
-    }
-       
-    .about-col-2 p{
-    font-size: 15px;
-}   
+.h-container{
+    height: 40vh;
+    width:96vw;
+    margin: 0 2vw;
+}
+
+
+
+.row{
+    flex-direction: column;
+}
+.a-container{
+    height: 120vh;
+    width:96vw;
+    margin: 0 2vw;
+}
+
+.p-container{
+    height:90vh;
+}
+
+.work{
+    width:60%;
+    margin-left: 20%;
+}
+
+.contact-form{
+    width:80vw;
+    text-align: center;
+    margin-left: 8%;
+    background-color: rgb(35, 42, 45);
+    box-shadow: 5px 5px 10px 3px rgb(11, 230, 182);
+    padding-bottom: 5px;
+}
+
+.ce-container{
+    height:50vh;
+}
+
+.swiper{
+    width:70%;
+ }
 }
