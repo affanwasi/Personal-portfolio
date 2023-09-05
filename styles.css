@@ -121,18 +121,13 @@ p span{
 } 
 
 
-    
-
-
-
-
 /* --------------------------------------ABOUT------------------------------------ */
 
 .a-container{
-    height: 70vh;
-    width:96vw;
-    margin: 20vh 2vw;
-   
+    height: 85vh;
+    width:88vw;
+    margin: 10vh 6vw;
+    padding: 10vh 10vh 0;
 }
 
 
@@ -155,9 +150,8 @@ p span{
 
 
 .about-col-1 img{
-    width:55%;
-    margin-left: 20%;
-    border:1px solid aqua;
+    width:65%;
+    border:1px solid rgb(3, 103, 139);
     box-shadow: 3px 3px 8px 1px  rgb(3, 103, 139);
 }
 
@@ -167,7 +161,7 @@ p span{
     border:2px solid rgb(3, 103, 139);
     box-shadow: 1px 1px 8px 5px rgb(3, 103, 139);
     padding: 20px 0 20px 20px;
-    height:60vh;
+    height:57vh;
     background: aliceblue;
 }
 
@@ -201,8 +195,12 @@ p{
 .tab-links{
     margin-right: 50px;
     position: relative;
+    cursor: pointer;
 }
 
+.tab-links:hover{
+    color: rgb(6, 77, 118);
+}
     
 .tab-links::after{
     content: '';
@@ -213,6 +211,7 @@ p{
     left:0;
     bottom:-6px;
     transition:0.5sec;
+
 }
 
 
@@ -244,6 +243,10 @@ p{
 
 .fa-brands{ 
     font-size: 30px;
+}
+
+i{
+    color: rgb(6, 6, 129);
 }
 
 
@@ -334,22 +337,22 @@ p{
 
 .btn{
     display: block;
-    margin: 20px auto;
+    margin: 20px 20px 0 60px;
     width: max-content;
-    box-shadow: 1px 1px 6px rgb(3, 103, 139);;
-    padding: 10px 40px;
+    box-shadow: 2px 2px 8px rgb(3, 103, 139);;
+    padding: 7px 30px;
     text-decoration: none;
     color:rgb(7, 7, 7);
     transition: background 0.5s;
     background:aliceblue;
+    border-radius: 5px;
 }
 
 
 .btn:hover{
     background: rgb(3, 103, 139);
+    color: beige;
 }
-
-
 
 
 /* -----------------------------------CERTIFICATE--------------------------------  */
@@ -358,15 +361,15 @@ p{
 .ce-container{
     width:80vw;
     height:75vh;
-    margin:auto;
+    margin: 10vh auto;
     text-align: center;
-    padding: 10vh 0;
+    padding: 3vh 0;
     background: aliceblue;
     box-shadow: 2px 2px 10px 5px rgb(3, 103, 139);
 }
 
 .ce-container h1{
-    padding:10px 0;
+    padding:3vh 0;
 }
 
 
@@ -436,98 +439,24 @@ form{
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
+.btn2{
+    margin: 10px auto;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.copyright i{
+    color:beige
+}
 
 
 /* ----------------------------------SMALL------------------------------------ */
 
 
-nav .fa-solid{display:none;}
+nav .fa-solid{display:none;
+}
 
 @media only screen and (max-width:600px){
 
-.header-text{
-margin-top: 30%;
-margin-bottom: 30%;
-font-size: 14px;}
-
-.header-text h1{
-font-size:18px;
-}
-p{
-font-size: 20px;
-}
-
-
-nav .fa-solid{
-    display:block;
-    font-size: 20px;
-    padding: 5%;
-}
-
-
-nav  ul{
-    background: rgb(4, 56, 56);
-    position:fixed;
-    top:0;
-    right:-100vw;
-    width: 100vw;
-    height: 100vh;
-    padding-top:40px;
-    transition: 0.5s;
-}
-
-
-nav ul li{
-    display: block;
-    margin:20px;
-}
-
-nav ul .fa-solid{
-    position: absolute;
-    top: 25px;
-    right:25px;
-}
-
-.h-container{
-    height: 40vh;
-    width:96vw;
-    margin: 0 2vw;
-}
-
-
-
-.row{
-    flex-direction: column;
-}
-.a-container{
-    height: 120vh;
-    width:96vw;
-    margin: 0 2vw;
-}
-
-.p-container{
-    height:90vh;
-}
-
-.work{
-    width:60%;
-    margin-left: 20%;
-}
-
-.contact-form{
-    width:80vw;
-    text-align: center;
-    margin-left: 8%;
-    background-color: rgb(35, 42, 45);
-    box-shadow: 5px 5px 10px 3px rgb(11, 230, 182);
-    padding-bottom: 5px;
-}
-
-.ce-container{
-    height:50vh;
-}
-
-.swiper{
-    width:70%;
- }
 }
