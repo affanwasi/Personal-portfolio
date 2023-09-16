@@ -74,7 +74,7 @@ p span{
 
     
 .header-text{
-    margin-top:15%; 
+    margin:15% 0; 
     font-size: 2rem;
     padding-left: 10vw;
 }
@@ -82,7 +82,7 @@ p span{
 .h-container{
     align-items: center;
     border:.2rem solid rgb(3, 103, 139);
-    height:85vh;
+    height:fit-content;
     width:94vw;
     margin: 0 3vw;
     box-shadow: .2rem .2rem .5rem rgb(3, 103, 139);
@@ -125,9 +125,9 @@ p span{
 /* --------------------------------------ABOUT------------------------------------ */
 
 .a-container{
-    height: 85vh;
+    height: 80vh;
     width:88vw;
-    margin: 10vh 6vw;
+    margin: 5vh 6vw;
     padding: 10vh 10vh 0;
 }
 
@@ -162,7 +162,7 @@ p span{
     border:.2rem solid rgb(3, 103, 139);
     box-shadow: .1rem .1rem .8rem .5rem rgb(3, 103, 139);
     padding: 2rem 0 2rem 2rem;
-    height:57vh;
+    height:fit-content;
     background: aliceblue;
 }
 
@@ -257,7 +257,7 @@ i{
 .p-container{
     width: 96vw;
     height:50vh;
-    margin:10vh 2vw;
+    margin:5vh 2vw;
     padding:10vh 0;
 }
 
@@ -344,9 +344,9 @@ i{
     box-shadow: .2rem .2rem .8rem rgb(3, 103, 139);;
     padding: .9rem 5rem;
     text-decoration: none;
-    color:rgb(7, 7, 7);
+    color:azure;
     transition: background 0.5s;
-    background:aliceblue;
+    background:rgb(3, 103, 139);
     border-radius: .5rem;
     font-size: 2rem;
 }
@@ -364,7 +364,7 @@ i{
 .ce-container{
     width:80vw;
     height:75vh;
-    margin: 10vh auto;
+    margin: 5vh auto;
     text-align: center;
     padding: 3vh 0;
     background: aliceblue;
@@ -397,7 +397,7 @@ i{
 .c-container{
     width: 96vw;
     height:60vh;
-    margin:10vh 2vw;
+    margin:0 auto;
 
 }
 
@@ -433,7 +433,6 @@ form{
 }
 
 .copyright{
-    width:100%;
     text-align: center;
     padding: 1.5rem 0;
     background: rgb(3, 103, 139);
@@ -467,12 +466,11 @@ nav .fa-solid{
         font-size: 45%;
      }
 
-   
-    
-    .h-container{
-        height:55vh;
+     nav ul li{
+        margin:1rem 1rem;
     }
-
+      
+     
     .a-container{
         height: 100vh;
         width:88vw;
@@ -503,7 +501,11 @@ nav .fa-solid{
     }
 
     .btn{
-        margin-left: 2rem;
+        margin-left: 3rem;
+    }
+
+    .btn2{
+        margin:2% auto;
     }
 
 
